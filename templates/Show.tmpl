@@ -1,0 +1,13 @@
+{{ define "Show" }}
+  {{ template "Header" }}
+    {{ template "Menu"  }}
+    <div class="container">
+        <h2>Register {{ .ID }}</h2>
+        <div class="card">
+          <div class="card-header">{{ .Title }}</div>
+          <div class="card-body">{{ .Body }}</div> 
+          <div class="card-footer"><a href="/edit?id={{ .ID }}">Edit</a></p></div>
+        </div>
+      </div>
+    {{ template "Footer" }}
+{{ end }}
